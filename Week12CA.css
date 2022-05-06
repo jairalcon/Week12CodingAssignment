@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://www.car-brand-names.com/wp-content/uploads/2016/04/Types-of-Cars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  
+
+.form-control :hover {
+   cursor: pointer;
+}
+
+.card-body {
+    background-color: transparent;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+    text-align: left;        
+    border: 2px solid #3b3c3d;
+    border-radius: 2px;
+}
+
+.card {
+    color: white;
+    background-color: #3b3c3d;
+    font-size: large;
+    border-radius: 2px;
+}
+
+#makes h2 {
+    background-color: #3b3c3d;
+    color: white;
+}
