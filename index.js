@@ -3,24 +3,24 @@
 
 // I hard coded some data for testing purposes
 const carList = [
-	// {
-	// 	id: 0,
-	// 	make: "Ford",
-	// 	model: "Fiesta",
-	// 	year: "2015"
-	// },
-	// {
-	// 	id: 1,
-	// 	make: "Geo",
-	// 	model: "Metro",
-	// 	year: "1992"
-	// },
-	// {
-	// 	id: 2,
-	// 	make: "Toyota",
-	// 	model: "Celica All-Trac Turbo",
-	// 	year: "1993"
-	// }
+	{
+		id: 0,
+		make: "Ford",
+		model: "Fiesta",
+		year: "2015"
+	},
+	{
+		id: 1,
+		make: "Geo",
+		model: "Metro",
+		year: "1992"
+	},
+	{
+		id: 2,
+		make: "Toyota",
+		model: "Celica All-Trac Turbo",
+		year: "1993"
+	}
 ];
 
 // console.log('This is the current array of Car Objects:', carList);
@@ -72,9 +72,9 @@ function renderCar(carParam) {
 		$("<td/>").text(carParam.make),
 		$("<td/>").text(carParam.model),
 		$("<td/>").text(carParam.year),
-		$("<td/>").append(
-			$("<button>").addClass("btn btn-primary").text("Edit").on("click", () => onStartVehicleEdit(carParam.id)),
-			$("<button/>").addClass("btn btn-danger me-2")/*.attr("id", `${carParam.id}`)*/.text("Delete").on("click", () => onDeleteButtonClick(carParam.id))			
+		$("<td/>").addClass("d-grid gap-2 d-md-flex justify-content-md").append(
+			$("<button>").addClass("btn btn-primary me-4").text("Edit").on("click", () => onStartVehicleEdit(carParam.id)),
+			$("<button/>").addClass("btn btn-danger me-4")/*.attr("id", `${carParam.id}`)*/.text("Delete").on("click", () => onDeleteButtonClick(carParam.id))			
 		)
 	)
 }
