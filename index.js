@@ -73,8 +73,8 @@ function renderCar(carParam) {
 		$("<td/>").text(carParam.model),
 		$("<td/>").text(carParam.year),
 		$("<td/>").append(
-			$("<button/>").addClass("btn btn-danger me-2")/*.attr("id", `${carParam.id}`)*/.text("Delete").on("click", () => onDeleteButtonClick(carParam.id)),
-			$("<button>").addClass("btn btn-primary").text("Edit").on("click", () => onStartVehicleEdit(carParam.id))
+			$("<button>").addClass("btn btn-primary").text("Edit").on("click", () => onStartVehicleEdit(carParam.id)),
+			$("<button/>").addClass("btn btn-danger me-2")/*.attr("id", `${carParam.id}`)*/.text("Delete").on("click", () => onDeleteButtonClick(carParam.id))			
 		)
 	)
 }
